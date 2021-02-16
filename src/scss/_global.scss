@@ -1,0 +1,105 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primary;
+  position: relative;
+  overflow-x: hidden;
+
+  &.freeze {
+    overflow-y: hidden;
+  }
+}
+
+// custom Scroll
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: $primary;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $orange;
+  border: 3px solid $primary;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  color: white !important;
+  padding: 8px 50px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+
+  font-size: 0.75rem;
+
+  @include breakpoint(lg) {
+    padding: 18px 66px;
+    font-size: 1rem;
+  }
+
+  &.btn-yellow {
+    background-image: $yellowGrad;
+  }
+  &.btn-red {
+    background-image: $redGrad;
+  }
+}
+
+form {
+  .btn {
+    border-radius: 8px;
+    width: 48%;
+    font-weight: 700;
+
+    @include breakpoint(lg) {
+      padding: 12px 66px;
+      font-size: 1rem;
+    }
+  }
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+
+  @include breakpoint(md) {
+    font-size: 2.375rem;
+    margin-bottom: 100px;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  @include breakpoint(md) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  color: $gray;
+}
+
+.row {
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1400px;
+  }
+}
