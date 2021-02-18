@@ -31,3 +31,8 @@ toggleNav.addEventListener("click", function () {
     toggleNav.setAttribute("src", "/src/assets/hamburger-menu.svg");
   }
 });
+
+backdrop.addEventListener("click", function () {
+  mobileNav.classList.remove("show");
+  backdrop.classList.remove("show");
+});
