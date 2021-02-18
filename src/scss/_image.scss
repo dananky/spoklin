@@ -24,7 +24,11 @@
 
 .responsive-maps {
   position: relative;
-  padding-bottom: 50%;
+  padding-bottom: 100%;
+
+  @include breakpoint(lg) {
+    padding-bottom: 50%;
+  }
 
   iframe {
     position: absolute;

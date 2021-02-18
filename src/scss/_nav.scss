@@ -1,6 +1,10 @@
 nav {
-  padding: 26px 0;
+  padding: 16px 0;
   transition: 0.2s linear;
+
+  @include breakpoint(lg) {
+    padding: 26px 0;
+  }
 
   &.scroll-nav {
     background-color: $brand-white;
@@ -40,6 +44,52 @@ nav {
             color: $brand-primary;
           }
         }
+      }
+    }
+
+    .nav-toggle {
+      display: block;
+
+      @include breakpoint(lg) {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile-navbar {
+  width: 90%;
+  padding: 20px 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  background-color: $brand-white;
+  border-radius: 8px;
+  list-style: none;
+  transition: 0.3s;
+  box-shadow: 0px 1px 16px 8px rgba(0, 0, 0, 0.03);
+
+  position: fixed;
+  top: 70px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 3;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  li {
+    padding: 6px 0;
+
+    a {
+      color: $brand-black;
+      font-weight: 600;
+      transition: 0.2s;
+
+      &:hover {
+        color: $brand-primary;
       }
     }
   }

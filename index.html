@@ -27,30 +27,50 @@
                 <a href="/" class="navbar-logo">
                     <img src="/src/assets/logo.png" alt="logo">
                 </a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-us">Contact Us</a>
-                    </li>
-                </ul>
+
+                <img id="menu-toggle" src="/src/assets/hamburger-menu.svg" alt="hamburger menu" class="nav-toggle">
+
+                <!-- Desktop Nav -->
+                <div class="d-none d-lg-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
+        <!-- Mobile Nav -->
+        <ul id="mobile-nav" class=" mobile-navbar">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#contact-us">Contact Us</a>
+            </li>
+        </ul>
+        <div id="backdrop-body" class="backdrop"></div>
 
         <div class="main">
             <div class="header home">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-7 align-self-center">
+                        <div class="col-lg-7 align-self-center mt-5 mt-lg-0">
                             <h1 class="display-3 fw-700">Your Spokat Binatu Partner</h1>
                             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad beatae aspernatur laborum. Veniam sequi accusamus exercitationem aliquam nostrum atque reiciendis fuga?</p>
                             <a class="btn btn-order px-4 py-2 mt-3" href="https://linktr.ee/spoklin" target="blank_">Order Now</a>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 order-first order-lg-last mb-5 mb-lg-0">
                             <div class="img-potrait">
                                 <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1543&q=80" alt="image">
                                 <div class="img-shadow"></div>
@@ -99,11 +119,11 @@
                 </div>
             </section>
 
-            <section id="why-us" class="section">
+            <section id="why-us" class="section pb-0">
                 <div class="container">
                     <h1 class="display-4 fw-700 text-center mb-5">Why Us?</h1>
                     <div class="row justify-content-center mb-5">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
                             <img src="/src/assets/why-us-1.svg" alt="Murah" width="80%">
                         </div>
                         <div class="col-lg-5">
@@ -116,12 +136,12 @@
                             <h2>Jaminan Termurah</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magni laboriosam quae, inventore veritatis dolor ea eligendi eius aut ut recusandae provident consectetur officiis eum iusto nemo, amet minus repudiandae!</p>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 order-first order-lg-last mb-4 mb-lg-0">
                             <img src="/src/assets/why-us-1.svg" alt="Murah" width="80%">
                         </div>
                     </div>
                     <div class="row justify-content-center mb-5">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
                             <img src="/src/assets/why-us-1.svg" alt="Murah" width="80%">
                         </div>
                         <div class="col-lg-5">
@@ -132,11 +152,11 @@
                 </div>
             </section>
 
-            <section id="contact-us" class="section pt-0">
+            <section id="contact-us" class="section">
                 <div class="container">
                     <div class="rounded-xl shadow-custom p-4">
                         <div class="row justify-content-center">
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
                                 <h1 class="display-4 fw-700 mb-4">Contact Us</h1>
                                 <p><img class="mr-3" src="/src/assets/placeholder.svg" alt="Address" height="25px">Jl. Alam Raya Blok D no.4, Villa Ilhami, Tangerang</p>
                                 <p><img class="mr-3" src="/src/assets/clock.svg" alt="Time" height="25px">9.00 AM - 9.00 PM</p>
@@ -206,7 +226,7 @@
                 <hr class="mt-4">
                 <div class="d-flex align-items-center justify-content-between">
                     <p class="small">© 2021 Spoklin</p>
-                    <ul class="footer-nav">
+                    <ul class="footer-nav d-none d-lg-block">
                         <li>
                             <a href="#about">About</a>
                         </li>
