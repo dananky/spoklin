@@ -347,6 +347,7 @@ nav .container .nav-toggle {
   font-weight: 600;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  text-decoration: none;
 }
 
 .mobile-navbar li a:hover {
