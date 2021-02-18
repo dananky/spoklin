@@ -103,6 +103,85 @@ body {
   }
 }
 
+.customer-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+
+  .customer-name {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .text-review {
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.slick-slide {
+  margin: 0px 20px;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+  outline: none !important;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 1;
+
+  @include breakpoint(sm) {
+    visibility: visible;
+  }
+
+  &::before {
+    font-family: "slick";
+    font-size: 40px;
+    line-height: 1;
+    color: $brand-black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &:hover {
+    &::before {
+      color: $brand-primary;
+    }
+  }
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
 @media (min-width: 1200px) {
   .container,
   .container-lg,

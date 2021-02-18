@@ -38,3 +38,14 @@ backdrop.addEventListener("click", function () {
 
   toggleNav.setAttribute("src", "/src/assets/hamburger-menu.svg");
 });
+
+$(".regular").slick({
+  // dots: true,
+  // infinite: true,
+  // slidesToShow: 3,
+  // slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  fade: true,
+  focusOnSelect: true,
+});

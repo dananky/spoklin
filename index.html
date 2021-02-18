@@ -16,12 +16,16 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="/src/js/slick-1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="/src/js/slick-1.8.1/slick/slick-theme.css">
+
         <!-- Style.css -->
         <link rel="stylesheet" href="/src/css/style.css">
 
         <title>Spoklin</title>
     </head>
-    <body class="dark-mode">
+    <body>
         <nav class="fixed-top">
             <div class="container">
                 <a href="/" class="navbar-logo">
@@ -50,13 +54,13 @@
         <!-- Mobile Nav -->
         <ul id="mobile-nav" class=" mobile-navbar">
             <li>
-                <a href="#about">About</a>
+                <a href="#about">Tentang Kami</a>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a href="#services">Layanan</a>
             </li>
             <li>
-                <a href="#contact-us">Contact Us</a>
+                <a href="#contact-us">Kontak Kami</a>
             </li>
         </ul>
         <div id="backdrop-body" class="backdrop"></div>
@@ -68,7 +72,7 @@
                         <div class="col-lg-7 align-self-center mt-5 mt-lg-0">
                             <h1 class="display-3 fw-700">Your Spokat Binatu Partner</h1>
                             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad beatae aspernatur laborum. Veniam sequi accusamus exercitationem aliquam nostrum atque reiciendis fuga?</p>
-                            <a class="btn btn-order px-4 py-2 mt-3" href="https://linktr.ee/spoklin" target="blank_">Order Now</a>
+                            <a class="btn btn-order px-4 py-2 mt-3" href="https://linktr.ee/spoklin" target="blank_">Pesan Sekarang</a>
                         </div>
                         <div class="col-lg-5 order-first order-lg-last mb-5 mb-lg-0">
                             <div class="img-potrait">
@@ -82,7 +86,7 @@
 
             <section id="about" class="section">
                 <div class="container">
-                    <h1 class="display-4 fw-700 text-center mb-5">About Us</h1>
+                    <h1 class="display-4 fw-700 text-center mb-5">Tentang Kami</h1>
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque at consectetur id perspiciatis nisi, omnis ipsum dignissimos quo itaque illo pariatur corrupti fuga repudiandae odit! Eligendi minus temporibus nihil reprehenderit.</p>
@@ -93,7 +97,7 @@
 
             <section id="services" class="section">
                 <div class="container">
-                    <h1 class="display-4 fw-700 text-center mb-5">Our Services</h1>
+                    <h1 class="display-4 fw-700 text-center mb-5">Layanan</h1>
                     <div class="d-flex flex-wrap align-items-center justify-content-center">
                         <div class="service-card">
                             <img src="/src/assets/sneakers.svg" alt="Fast Clean">
@@ -121,7 +125,7 @@
 
             <section id="why-us" class="section pb-0">
                 <div class="container">
-                    <h1 class="display-4 fw-700 text-center mb-5">Why Us?</h1>
+                    <h1 class="display-4 fw-700 text-center mb-5">Kenapa Harus Kami?</h1>
                     <div class="row justify-content-center mb-5">
                         <div class="col-lg-5 mb-4 mb-lg-0">
                             <img src="/src/assets/why-us-1.svg" alt="Murah" width="80%">
@@ -152,12 +156,53 @@
                 </div>
             </section>
 
+            <section id="our-customer" class="section pb-0">
+                <div class="container">
+                    <h1 class="display-4 fw-700 text-center mb-5">Apa Kata Pelanggan Kami</h1>
+                    <div class="regular slider">
+                        <div class="p-2 p-md-0">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="customer-review">
+                                        <img src="https://lh3.googleusercontent.com/a-/AOh14Gg5y0SeSHcA5sViYXN7oAYQviBpZ_xK_TRplUX-Mg=s800-c-c0x00000000-rp-br100" alt="Kenanda Ardhenariswari S">
+                                        <h4 class="customer-name">Kenanda Ardhenariswari S</h4>
+                                        <p class="text-review">"pasangnpasang langsung kita pake jasa spoklin tanpa pikir panjang. Masuk selasa malem, jumat siang udah kelar. Free anter jemput, emang ok buat gue yg mageran. Lumayan juga masih ada promonya, semoga promonya bertahan lama yaa. Oiya, miminnya juga gercep. Bakal balik lagi buat cuci disini. Thanks!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 p-md-0">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="customer-review">
+                                        <img src="https://lh3.googleusercontent.com/a-/AOh14Gg8kf1UUDW3iYnU3rcI6TKmUtpCfjqdIwJwOmr1mHo=s800-c-c0x00000000-rp-ba3-br100" alt="Afinda Husnia">
+                                        <h4 class="customer-name">Afinda Husnia</h4>
+                                        <p class="text-review">"ya udah kuning, jadi nyoba paket yang deep clean + unyellowing. Hasilnya putih banget!!! Balik lagi kayak sepatu baru hihi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 p-md-0">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="customer-review">
+                                        <img src="https://lh3.googleusercontent.com/a-/AOh14GjzMQLIj5VFH2yRlM6BpxMvplGThPecMk85jZ3kfg=s800-c-c0x00000000-rp-br100" alt="Bramastha Ifnu">
+                                        <h4 class="customer-name">Bramastha Ifnu</h4>
+                                        <p class="text-review">"Sepatuku jadi bener bener bersih seperti baru, dianter jemput lagi, admin nya juga bersahabat dan ramaah banget, recommend banget apalagi sepatu putih 👍"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="contact-us" class="section">
                 <div class="container">
                     <div class="rounded-xl shadow-custom p-4">
                         <div class="row justify-content-center">
                             <div class="col-lg-5 mb-4 mb-lg-0">
-                                <h1 class="display-4 fw-700 mb-4">Contact Us</h1>
+                                <h1 class="display-4 fw-700 mb-4">Kontak Kami</h1>
                                 <p><img class="mr-3" src="/src/assets/placeholder.svg" alt="Address" height="25px">Jl. Alam Raya Blok D no.4, Villa Ilhami, Tangerang</p>
                                 <p><img class="mr-3" src="/src/assets/clock.svg" alt="Time" height="25px">9.00 AM - 9.00 PM</p>
                                 <p>
@@ -197,11 +242,11 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-lg-3 mb-3">
-                        <h6>Find Us</h6>
+                        <h6>Temukan Kami</h6>
                         <p>Jl. Alam Raya Blok D no.4 <br> Villa Ilhami <br> Tangerang</p>
                     </div>
                     <div class="col-sm-6 col-lg-3 mb-3">
-                        <h6>Order Now</h6>
+                        <h6>Pesan Sekarang</h6>
                         <p class="mb-1">
                             <a href="https://api.whatsapp.com/send/?phone=6288213626576&text&app_absent=0" target="blank_">
                                 <img class="mr-3" src="/src/assets/whatsapp.svg" alt="Time" height="25px">+62 8821 3626 576
@@ -215,7 +260,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6 col-lg-3 mb-3">
-                        <h6>Follow Us</h6>
+                        <h6>Ikuti Kami</h6>
                         <p>
                             <a href="https://instagram.com/spoklin_?igshid=15m7150f617gn" target="blank_">
                                 <img class="mr-3" src="/src/assets/instagram.svg" alt="Time" height="25px">spoklin_
@@ -228,13 +273,13 @@
                     <p class="small">© 2021 Spoklin</p>
                     <ul class="footer-nav d-none d-lg-block">
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about">Tentang Kami</a>
                         </li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#services">Layanan</a>
                         </li>
                         <li>
-                            <a href="#contact-us">Contact Us</a>
+                            <a href="#contact-us">Kontak Kami</a>
                         </li>
                     </ul>
                 </div>
@@ -245,6 +290,9 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
         
+        <!-- Slick JS -->
+        <script src="/src/js/slick-1.8.1/slick/slick.min.js"></script>
+
         <!-- script.js -->
         <script src="/src/js/script.js"></script>
     </body>
