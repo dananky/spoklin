@@ -40,12 +40,7 @@ backdrop.addEventListener("click", function () {
 });
 
 $(".regular").slick({
-  // dots: true,
-  // infinite: true,
-  // slidesToShow: 3,
-  // slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 5000,
-  fade: true,
-  focusOnSelect: true,
+  speed: 1000,
 });
