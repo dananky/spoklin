@@ -1,0 +1,46 @@
+nav {
+  padding: 26px 0;
+  transition: 0.2s linear;
+
+  &.scroll-nav {
+    background-color: $brand-white;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-logo {
+      width: 126px;
+
+      img {
+        width: 126px;
+      }
+
+      &:hover {
+        color: $brand-black;
+      }
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+
+      .nav-item {
+        margin-left: 40px;
+
+        .nav-link {
+          color: $brand-black;
+          font-weight: 600;
+          transition: 0.2s;
+
+          &:hover {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+}
