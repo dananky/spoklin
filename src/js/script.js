@@ -12,7 +12,6 @@ if (navPos > 1) {
 
 document.addEventListener("scroll", function () {
   const scrollPos = window.pageYOffset;
-  console.log(scrollPos);
 
   if (scrollPos > 50) {
     nav.classList.add("scroll-nav");
