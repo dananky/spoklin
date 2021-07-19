@@ -1,3 +1,7 @@
-# spoklin
+# Spoklin
 
-[Link Website](https://spoklin.netlify.app/)
+Link : [https://spoklin.netlify.app/](https://spoklin.netlify.app/)
+
+## Stack
+Markup : * Bootstrap 4
+         * Slick Slider
